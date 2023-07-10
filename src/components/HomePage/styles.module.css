@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.supporting {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8a8ae0;
+    margin-bottom: 3px;
+    font-size: 14px;
+    position: relative;
+    z-index: -999;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.endlinesp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.homepage-img {
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+}
+
+.homepage-img img {
+    width: 100%;
+    max-height: none !important;
+    /* override bootstrap's style */
+}
+
+.shopnow-content {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.shopnow-content h1 {
+    font-size: 24px;
+    line-height: normal;
+    font-style: inherit;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.shopnow-content h3 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px;
+    font-style: normal;
+    color: rgb(127, 127, 127);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.shop-btn {
+    height: 50px;
+    width: 200px;
+    background-color: #00b7ff;
+    color: #fff;
+    border: none;
+    padding: .5em 1em;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.shop-btn:hover {
+    background-color: #0095cc;
+}
+
+.new-arrivals{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 35px 150px;
+}
+
+.new-arrivals h1 {
+    font-size: 26px;
+    line-height: normal;
+    font-style: inherit;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif !important;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.list-cards {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none;
+    max-width: calc(6 * (var(--cardWidth) + var(--gutter)));
+    margin: 0 auto;
+    padding: 0;
+
+    gap: 30px;
+
+
+}
