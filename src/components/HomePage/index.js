@@ -1,5 +1,6 @@
 import React from "react";
 import HeaderComp from "../HeaderComp";
+import FooterComp from "../FooterComp";
 import styles from "./styles.module.css";
 import image1 from "./assets/1.jpg";
 import image2 from "./assets/2.jpg";
@@ -55,7 +56,7 @@ export default function HomePage() {
             }}
             cover={<img alt="example" src={manimg} />}
           >
-            <Meta  title="Men's Home Kit" description="$99" />
+            <Meta title="Men's Home Kit" description="$99" />
           </Card>
           <Card
             hoverable
@@ -86,6 +87,7 @@ export default function HomePage() {
           </Card>
         </div>
       </div>
+      <FooterComp />
     </>
   );
 }

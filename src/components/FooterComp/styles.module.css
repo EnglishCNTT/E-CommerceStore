@@ -1,0 +1,132 @@
+.info-container {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    font-family: 'Open Sans', sans-serif;
+    gap: 50px;
+}
+
+.subscribe {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.subscribe h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    /* font-style: italic; */
+    color: #000;
+}
+
+.subscribe h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.subscribe p {
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: gray;
+}
+
+.enter-email {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.enter-email input {
+    background-color: #e6f4f5;
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+}
+
+
+
+.describe {
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.describe label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.describe ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.describe ul li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.payment-partner {
+    padding-left: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.payment-partner span {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: oblique;
+    color: gray;
+}
+
+.payment-partner .payment-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.payment-partner .payment-icon span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.payment-partner .payment-icon img {
+    width: 70%;
+    height: 40px;
+}

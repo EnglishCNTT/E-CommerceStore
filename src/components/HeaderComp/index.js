@@ -8,16 +8,23 @@ import account_icon from "./assets/account.png";
 import bar_icon from "./assets/bars-solid.svg";
 import close_icon from "./assets/xmark-solid.svg";
 import { Menu } from "antd";
+import { Link } from "react-router-dom";
+import { FaBars, FaSearch } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+import { SidebarData } from "./SidebarData";
 
 export default function HeaderComp() {
-  
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+
   return (
     <>
       {/* Nav Mobile */}
-      <div className={styles["nav-mobile"]}>
-        <button className={styles["bars"]}>
-          <img width={20} height={20} src={bar_icon} />
-        </button>
+      <div className={styles["navbarhidden"]}>
+        <Link to="#" className={styles["menubar"]}>
+          <FaBars onClick={showSidebar} />
+        </Link>
         <button className={styles["mylogo-mobile"]}>
           <img height={80} src={logo} alt="" />
         </button>
@@ -29,35 +36,30 @@ export default function HeaderComp() {
         </button>
       </div>
 
-      
-
-      {/* <div className={styles["sidebar-mobile"]}>
-        <div className={styles["closeside"]}>
-          <img src={close_icon} alt="" />
-        </div>
-        <ul className={styles["main_menu-list"]}>
-          <li>
-            <a className={styles["link-page-list"]} href="/">
-              Trang chủ
-            </a>
+      <nav className={styles[sidebar ? "active" : "nav-menu"]}>
+        <ul className={styles["nav-menu-items"]}>
+          <li className={styles["navbar-toggle"]}>
+            <input type="text" placeholder="Tìm kiếm..." />
+            {/* <FaSearch /> */}
+            <button className={styles["search"]}>
+              <img width={20} height={20} src={search_icon} />
+            </button>
+            <Link to="#" className={styles["menu-bars"]}>
+              <AiOutlineClose onClick={showSidebar} />
+            </Link>
           </li>
-          <li>
-            <a className={styles["link-page-list"]} href="/">
-              Áo bóng đá
-            </a>
-          </li>
-          <li>
-            <a className={styles["link-page-list"]} href="/">
-              Giày bóng đá
-            </a>
-          </li>
-          <li>
-            <a className={styles["link-page-list"]} href="/">
-              Phụ kiện
-            </a>
-          </li>
+          {SidebarData.map((item, index) => {
+            return (
+              <li key={index} className={styles[item.cName]}>
+                <Link to={item.path}>
+                  {item.icon}
+                  <span>{item.title}</span>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
-      </div> */}
+      </nav>
 
       {/* Nav PC */}
 
