@@ -26,9 +26,9 @@ body {
     background: none;
 }
 
-.menu-bars:hover{
+.menu-bars:hover {
     color: #11b9fc;
-    transition:.4s ease all;
+    transition: .4s ease all;
 }
 
 /* Search */

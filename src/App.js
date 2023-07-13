@@ -1,7 +1,7 @@
 import { RouterProvider, Routes } from "react-router-dom";
 import "./App.css";
 import HeaderComp from "./components/HeaderComp";
-import HomePage from "./components/HomePage";
+import HomePage from "./pages/HomePage";
 import router from "./Routers"
 
 function App() {
